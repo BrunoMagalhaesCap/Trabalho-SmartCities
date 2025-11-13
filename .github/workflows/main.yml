@@ -1,0 +1,40 @@
+name: Atualizar Clima
+
+on:
+  schedule:
+    - cron: '*/15 * * * *' # Roda a cada 15 minutos
+  workflow_dispatch: # Permite rodar manualmente clicando num botão (para testar)
+
+permissions:
+  contents: write # Permissão vital para salvar os arquivos de volta no repositório
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Baixar código do repositório
+      uses: actions/checkout@v3
+
+    - name: Configurar Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.9'
+
+    - name: Instalar bibliotecas
+      run: |
+        pip install -r requirements.txt
+
+    - name: Rodar script de atualização
+      env: 
+        WEATHER_API_KEY: ${{ secrets.WEATHER_API_KEY }} # Pega a chave segura
+      run: python script.py
+
+    - name: Salvar e subir mudanças (Commit)
+      run: |
+        git config --global user.name 'github-actions[bot]'
+        git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+        git add dados.json dashboard.png
+        # Só faz o commit se houver mudanças
+        git commit -m "Atualização automática do clima" || echo "Sem mudanças para commitar"
+        git push
