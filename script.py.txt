@@ -1,0 +1,55 @@
+import requests
+import pandas as pd
+import matplotlib.pyplot as plt
+from datetime import datetime, timedelta
+import json
+import os
+
+# --- CONFIGURAÇÃO ---
+# O script vai tentar pegar a chave do ambiente (GitHub)
+# Se não achar, usa a sua chave direto (fallback para testes locais)
+API_KEY = os.getenv("WEATHER_API_KEY", "2fd886358cd74ccb852233410253010") 
+CIDADE = "Belo Horizonte"
+
+try:
+    print(f"Iniciando atualização: {datetime.now()}")
+    
+    # 1. BUSCA DADOS
+    url_atual = f"https://api.weatherapi.com/v1/current.json?key={API_KEY}&q={CIDADE}&lang=pt&aqi=yes"
+    url_historico = f"https://api.weatherapi.com/v1/history.json?key={API_KEY}&q={CIDADE}&dt={(datetime.now() - timedelta(days=1)).strftime('%Y-%m-%d')}&lang=pt"
+    
+    resp_atual = requests.get(url_atual).json()
+    resp_hist = requests.get(url_historico).json()
+
+    # 2. SALVA JSON
+    dados_site = {
+        "cidade": resp_atual['location']['name'],
+        "data_hora": resp_atual['location']['localtime'],
+        "temp_atual": resp_atual['current']['temp_c'],
+        "sensacao": resp_atual['current']['feelslike_c'],
+        "umidade": resp_atual['current']['humidity'],
+        "condicao": resp_atual['current']['condition']['text'],
+        "icone": "https:" + resp_atual['current']['condition']['icon']
+    }
+
+    with open('dados.json', 'w', encoding='utf-8') as f:
+        json.dump(dados_site, f, indent=4)
+
+    # 3. GERA GRÁFICO
+    dados_por_hora = resp_hist['forecast']['forecastday'][0]['hour']
+    df = pd.DataFrame(dados_por_hora)
+    df['hora_num'] = df['time'].apply(lambda x: int(x.split(' ')[1].split(':')[0]))
+
+    plt.figure(figsize=(10, 5))
+    plt.plot(df['hora_num'], df['temp_c'], marker='o', color='#ff7f50', linewidth=2)
+    plt.title(f'Variação da Temperatura (Últimas 24h) em {CIDADE}')
+    plt.xlabel('Hora do Dia')
+    plt.ylabel('Temperatura (°C)')
+    plt.grid(True, alpha=0.3)
+    plt.xticks(range(0, 24))
+    
+    plt.savefig('dashboard.png', bbox_inches='tight')
+    print("Atualização concluída com sucesso!")
+
+except Exception as e:
+    print(f"Erro: {e}")

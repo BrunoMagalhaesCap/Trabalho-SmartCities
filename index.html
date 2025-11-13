@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monitoramento Climático - Smart City</title>
+    <meta http-equiv="refresh" content="900">
+    
+    <style>
+        body { font-family: 'Segoe UI', sans-serif; background-color: #f0f2f5; text-align: center; padding: 20px; }
+        .container { max-width: 800px; margin: 0 auto; background: white; padding: 30px; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
+        h1 { color: #2c3e50; }
+        .destaque-box { display: flex; justify-content: space-around; margin: 30px 0; flex-wrap: wrap; }
+        .kpi { background: #e3f2fd; padding: 20px; border-radius: 10px; min-width: 150px; margin: 10px; }
+        .kpi h2 { margin: 0; color: #1565c0; font-size: 3em; }
+        .kpi p { margin: 0; color: #555; font-weight: bold; }
+        img.grafico { max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 5px; margin-top: 20px; }
+        .rodape { margin-top: 30px; font-size: 0.8em; color: #888; }
+        .condicao-atual { display: flex; align-items: center; justify-content: center; gap: 10px; font-size: 1.2em; margin-bottom: 20px;}
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>🌤️ Monitoramento Belo Horizonte</h1>
+        
+        <div id="dados-tempo">
+            <div class="condicao-atual">
+                <img id="icone-clima" src="" alt="Icone">
+                <span id="texto-condicao">Carregando...</span>
+            </div>
+
+            <div class="destaque-box">
+                <div class="kpi">
+                    <h2 id="temp">--°</h2>
+                    <p>Temperatura</p>
+                </div>
+                <div class="kpi">
+                    <h2 id="umid">--%</h2>
+                    <p>Umidade</p>
+                </div>
+            </div>
+            <p>Sensação Térmica: <span id="sensacao">--</span>°C</p>
+            <p style="font-size: 0.8em">Última atualização: <span id="data-hora">--</span></p>
+        </div>
+
+        <hr>
+        
+        <h3>Histórico das Últimas 24h</h3>
+        <img src="dashboard.png" class="grafico" alt="Gráfico de Temperatura">
+        
+        <div class="rodape">
+            <p>Projeto Smart City - Atualização Automática a cada 15 min.</p>
+        </div>
+    </div>
+
+    <script>
+        // Função para ler o arquivo JSON
+        fetch('dados.json')
+            .then(response => response.json())
+            .then(data => {
+                // Preenche os elementos do HTML com os dados do JSON
+                document.getElementById('temp').innerText = data.temp_atual + "°";
+                document.getElementById('umid').innerText = data.umidade + "%";
+                document.getElementById('sensacao').innerText = data.sensacao;
+                document.getElementById('texto-condicao').innerText = data.condicao;
+                document.getElementById('data-hora').innerText = data.data_hora;
+                document.getElementById('icone-clima').src = data.icone;
+            })
+            .catch(error => {
+                console.error('Erro ao ler dados.json:', error);
+                // Se der erro (ex: segurança do navegador local), mostra aviso
+                document.getElementById('texto-condicao').innerText = "Erro ao carregar dados (Veja console)";
+            });
+    </script>
+</body>
+</html>
