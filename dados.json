@@ -1,9 +1,9 @@
 {
     "cidade": "Belo Horizonte",
-    "data_hora": "2025-11-28 03:56",
-    "temp_atual": 18.2,
-    "sensacao": 18.2,
-    "umidade": 88,
+    "data_hora": "2025-11-28 04:34",
+    "temp_atual": 19.2,
+    "sensacao": 19.2,
+    "umidade": 83,
     "condicao": "Nublado",
     "icone": "https://cdn.weatherapi.com/weather/64x64/night/119.png"
 }
