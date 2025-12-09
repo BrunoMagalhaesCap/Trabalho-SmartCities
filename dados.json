@@ -1,9 +1,9 @@
 {
     "cidade": "Belo Horizonte",
-    "data_hora": "2025-12-09 04:51",
-    "temp_atual": 19.0,
-    "sensacao": 19.0,
-    "umidade": 94,
+    "data_hora": "2025-12-09 05:57",
+    "temp_atual": 19.2,
+    "sensacao": 19.2,
+    "umidade": 100,
     "condicao": "Parcialmente nublado",
-    "icone": "https://cdn.weatherapi.com/weather/64x64/night/116.png"
+    "icone": "https://cdn.weatherapi.com/weather/64x64/day/116.png"
 }
