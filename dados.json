@@ -1,8 +1,8 @@
 {
     "cidade": "Belo Horizonte",
-    "data_hora": "2025-12-14 00:28",
-    "temp_atual": 23.2,
-    "sensacao": 25.6,
+    "data_hora": "2025-12-14 01:21",
+    "temp_atual": 23.4,
+    "sensacao": 25.8,
     "umidade": 78,
     "condicao": "Neblina",
     "icone": "https://cdn.weatherapi.com/weather/64x64/night/143.png"
