@@ -1,8 +1,8 @@
 {
     "cidade": "Belo Horizonte",
-    "data_hora": "2025-12-20 14:38",
-    "temp_atual": 24.2,
-    "sensacao": 25.3,
+    "data_hora": "2025-12-20 14:51",
+    "temp_atual": 24.1,
+    "sensacao": 25.2,
     "umidade": 69,
     "condicao": "Chuva fraca",
     "icone": "https://cdn.weatherapi.com/weather/64x64/day/296.png"
