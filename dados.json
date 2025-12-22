@@ -1,9 +1,9 @@
 {
     "cidade": "Belo Horizonte",
-    "data_hora": "2025-12-22 19:55",
-    "temp_atual": 18.7,
-    "sensacao": 18.7,
-    "umidade": 69,
+    "data_hora": "2025-12-22 20:20",
+    "temp_atual": 24.3,
+    "sensacao": 26.1,
+    "umidade": 57,
     "condicao": "C\u00e9u limpo",
     "icone": "https://cdn.weatherapi.com/weather/64x64/night/113.png"
 }
