@@ -1,9 +1,9 @@
 {
     "cidade": "Belo Horizonte",
-    "data_hora": "2025-12-30 00:18",
-    "temp_atual": 25.1,
-    "sensacao": 27.6,
-    "umidade": 74,
+    "data_hora": "2025-12-30 01:13",
+    "temp_atual": 24.1,
+    "sensacao": 26.3,
+    "umidade": 78,
     "condicao": "Chuva moderada ou forte com trovoada",
     "icone": "https://cdn.weatherapi.com/weather/64x64/night/389.png"
 }
