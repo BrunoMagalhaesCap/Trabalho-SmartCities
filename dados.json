@@ -1,9 +1,9 @@
 {
     "cidade": "Belo Horizonte",
-    "data_hora": "2025-12-31 16:50",
-    "temp_atual": 32.1,
-    "sensacao": 35.8,
-    "umidade": 43,
+    "data_hora": "2025-12-31 17:22",
+    "temp_atual": 32.3,
+    "sensacao": 37.4,
+    "umidade": 46,
     "condicao": "Parcialmente nublado",
     "icone": "https://cdn.weatherapi.com/weather/64x64/day/116.png"
 }
