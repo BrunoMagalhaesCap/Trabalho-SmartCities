@@ -1,9 +1,9 @@
 {
     "cidade": "Belo Horizonte",
-    "data_hora": "2026-01-01 09:41",
+    "data_hora": "2026-01-01 10:23",
     "temp_atual": 29.2,
-    "sensacao": 31.5,
-    "umidade": 62,
-    "condicao": "Sol",
-    "icone": "https://cdn.weatherapi.com/weather/64x64/day/113.png"
+    "sensacao": 30.8,
+    "umidade": 55,
+    "condicao": "Parcialmente nublado",
+    "icone": "https://cdn.weatherapi.com/weather/64x64/day/116.png"
 }
