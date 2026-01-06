@@ -1,9 +1,9 @@
 {
     "cidade": "Belo Horizonte",
-    "data_hora": "2026-01-06 02:51",
-    "temp_atual": 19.1,
-    "sensacao": 19.1,
-    "umidade": 88,
+    "data_hora": "2026-01-06 03:34",
+    "temp_atual": 18.4,
+    "sensacao": 18.4,
+    "umidade": 94,
     "condicao": "Parcialmente nublado",
     "icone": "https://cdn.weatherapi.com/weather/64x64/night/116.png"
 }
