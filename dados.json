@@ -1,9 +1,9 @@
 {
     "cidade": "Belo Horizonte",
-    "data_hora": "2026-01-26 02:59",
+    "data_hora": "2026-01-26 03:51",
     "temp_atual": 21.2,
     "sensacao": 21.2,
-    "umidade": 88,
-    "condicao": "Aguaceiros fracos",
-    "icone": "https://cdn.weatherapi.com/weather/64x64/night/353.png"
+    "umidade": 83,
+    "condicao": "Neblina",
+    "icone": "https://cdn.weatherapi.com/weather/64x64/night/143.png"
 }
