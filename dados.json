@@ -1,9 +1,9 @@
 {
     "cidade": "Belo Horizonte",
-    "data_hora": "2026-01-31 12:56",
-    "temp_atual": 22.3,
-    "sensacao": 24.7,
+    "data_hora": "2026-01-31 13:29",
+    "temp_atual": 21.3,
+    "sensacao": 21.3,
     "umidade": 94,
-    "condicao": "Encoberto",
-    "icone": "https://cdn.weatherapi.com/weather/64x64/day/122.png"
+    "condicao": "Chuva moderada ou forte com trovoada",
+    "icone": "https://cdn.weatherapi.com/weather/64x64/day/389.png"
 }
