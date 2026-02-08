@@ -1,9 +1,9 @@
 {
     "cidade": "Belo Horizonte",
-    "data_hora": "2026-02-08 08:46",
+    "data_hora": "2026-02-08 09:50",
     "temp_atual": 21.1,
     "sensacao": 21.1,
     "umidade": 94,
-    "condicao": "Chuva fraca",
-    "icone": "https://cdn.weatherapi.com/weather/64x64/day/296.png"
+    "condicao": "Parcialmente nublado",
+    "icone": "https://cdn.weatherapi.com/weather/64x64/day/116.png"
 }
