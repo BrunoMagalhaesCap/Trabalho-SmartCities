@@ -1,9 +1,9 @@
 {
-    "cidade": "San Francisco De Horizonte (Horizonte)",
-    "data_hora": "2026-02-22 17:50",
-    "temp_atual": 23.0,
-    "sensacao": 22.7,
-    "umidade": 23,
-    "condicao": "Sol",
-    "icone": "https://cdn.weatherapi.com/weather/64x64/day/113.png"
+    "cidade": "Belo Horizonte",
+    "data_hora": "2026-02-22 23:07",
+    "temp_atual": 21.4,
+    "sensacao": 21.4,
+    "umidade": 94,
+    "condicao": "Chuva moderada ou forte com trovoada",
+    "icone": "https://cdn.weatherapi.com/weather/64x64/night/389.png"
 }
