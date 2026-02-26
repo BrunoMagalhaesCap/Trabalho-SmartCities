@@ -1,8 +1,8 @@
 {
     "cidade": "Belo Horizonte",
-    "data_hora": "2026-02-25 20:44",
-    "temp_atual": 23.3,
-    "sensacao": 25.8,
+    "data_hora": "2026-02-25 21:03",
+    "temp_atual": 23.4,
+    "sensacao": 26.0,
     "umidade": 94,
     "condicao": "Chuva fraca irregular com trovoada",
     "icone": "https://cdn.weatherapi.com/weather/64x64/night/386.png"
