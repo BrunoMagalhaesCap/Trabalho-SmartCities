@@ -1,9 +1,9 @@
 {
     "cidade": "Belo Horizonte",
-    "data_hora": "2026-02-27 09:00",
-    "temp_atual": 22.2,
-    "sensacao": 24.8,
+    "data_hora": "2026-02-27 10:19",
+    "temp_atual": 22.1,
+    "sensacao": 24.6,
     "umidade": 94,
-    "condicao": "Chuvisco",
-    "icone": "https://cdn.weatherapi.com/weather/64x64/day/266.png"
+    "condicao": "Chuva moderada",
+    "icone": "https://cdn.weatherapi.com/weather/64x64/day/302.png"
 }
