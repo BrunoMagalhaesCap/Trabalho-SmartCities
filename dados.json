@@ -1,9 +1,9 @@
 {
     "cidade": "Belo Horizonte",
-    "data_hora": "2026-03-07 03:40",
+    "data_hora": "2026-03-07 04:16",
     "temp_atual": 21.0,
     "sensacao": 21.0,
-    "umidade": 100,
+    "umidade": 94,
     "condicao": "Nevoeiro",
     "icone": "https://cdn.weatherapi.com/weather/64x64/night/248.png"
 }
