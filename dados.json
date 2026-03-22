@@ -1,8 +1,8 @@
 {
     "cidade": "Belo Horizonte",
-    "data_hora": "2026-03-22 18:27",
-    "temp_atual": 27.0,
-    "sensacao": 29.9,
+    "data_hora": "2026-03-22 18:49",
+    "temp_atual": 27.3,
+    "sensacao": 30.4,
     "umidade": 62,
     "condicao": "Possibilidade de chuva irregular",
     "icone": "https://cdn.weatherapi.com/weather/64x64/night/176.png"
