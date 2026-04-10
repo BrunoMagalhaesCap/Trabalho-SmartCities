@@ -1,9 +1,9 @@
 {
     "cidade": "Belo Horizonte",
-    "data_hora": "2026-04-09 20:37",
-    "temp_atual": 24.3,
-    "sensacao": 26.6,
-    "umidade": 65,
-    "condicao": "Chuva moderada ou forte com trovoada",
-    "icone": "https://cdn.weatherapi.com/weather/64x64/night/389.png"
+    "data_hora": "2026-04-09 22:02",
+    "temp_atual": 18.7,
+    "sensacao": 18.7,
+    "umidade": 90,
+    "condicao": "Possibilidade de chuva irregular",
+    "icone": "https://cdn.weatherapi.com/weather/64x64/night/176.png"
 }
