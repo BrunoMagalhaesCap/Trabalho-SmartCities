@@ -1,9 +1,9 @@
 {
     "cidade": "Belo Horizonte",
-    "data_hora": "2026-05-31 15:00",
-    "temp_atual": 24.5,
-    "sensacao": 25.5,
-    "umidade": 51,
+    "data_hora": "2026-05-31 16:41",
+    "temp_atual": 23.4,
+    "sensacao": 25.0,
+    "umidade": 56,
     "condicao": "Possibilidade de chuva irregular",
     "icone": "https://cdn.weatherapi.com/weather/64x64/day/176.png"
 }
