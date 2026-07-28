@@ -1,9 +1,9 @@
 {
     "cidade": "Belo Horizonte",
-    "data_hora": "2026-07-28 13:23",
-    "temp_atual": 28.6,
-    "sensacao": 23.1,
-    "umidade": 28,
+    "data_hora": "2026-07-28 14:53",
+    "temp_atual": 28.9,
+    "sensacao": 23.5,
+    "umidade": 26,
     "condicao": "Ensolarado",
     "icone": "https://cdn.weatherapi.com/weather/64x64/day/113.png"
 }
