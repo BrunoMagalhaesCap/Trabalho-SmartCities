@@ -1,9 +1,9 @@
 {
     "cidade": "Belo Horizonte",
-    "data_hora": "2026-08-23 01:46",
-    "temp_atual": 17.1,
-    "sensacao": 16.1,
-    "umidade": 81,
+    "data_hora": "2026-08-23 02:28",
+    "temp_atual": 16.3,
+    "sensacao": 15.3,
+    "umidade": 84,
     "condicao": "C\u00e9u limpo",
     "icone": "https://cdn.weatherapi.com/weather/64x64/night/113.png"
 }
