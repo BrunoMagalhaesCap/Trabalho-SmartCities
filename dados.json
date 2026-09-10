@@ -1,9 +1,9 @@
 {
     "cidade": "Belo Horizonte",
-    "data_hora": "2026-09-09 20:28",
-    "temp_atual": 22.2,
-    "sensacao": 21.7,
-    "umidade": 63,
+    "data_hora": "2026-09-09 22:22",
+    "temp_atual": 21.5,
+    "sensacao": 21.4,
+    "umidade": 68,
     "condicao": "Chuva irregular nas proximidades",
     "icone": "https://cdn.weatherapi.com/weather/64x64/night/176.png"
 }
